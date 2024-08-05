@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather web app</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter a place" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name </p>
+        </div>
+        <div class="weather">
+            <img src="rain-removebg-preview.png"  class="weather-icon">
+            <h2 class="temp">20°C</h2>
+            <h2 class="city">Lodhran</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity-removebg-preview.png" class="humidimg">
+                    <p class="humidity">55% humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="wind-removebg-preview.png" class="windimg" >
+                <p class="wind">20km/h wind speed</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
